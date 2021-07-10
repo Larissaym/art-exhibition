@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Didot';
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 1em 0;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #9ba597;
+}
+
+/* LINK */
+a {
+  color: black !important;
+}
+
+a.active {
+  color: #546252 !important;
+}
+
+a:hover, a:active {
+  color: #546252 !important;
+}
+
+/* FORM */
+.form {
+  padding: 0 0 3em 0;
+}
+
+.form-control {
+  margin: 2.5em 0;
+  padding: 0;
+  position: relative;
+  border: none;
+}
+
+.form-control label {
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  margin: 5px 0 0 0;
+  left: 0;
+  visibility: hidden;
+  font-size: .75rem;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: #9ba597;
+  border: 1px #9ba597 solid;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* CHECKBOX */
+input[type=radio] {
+  width:15px; 
+  height:15px;
+  border: 1px #9ba597 solid;
+  transition: .3s background-color;
+}
+  
+input[type=radio]:hover {
+  background-color: #9ba597;
+}
+
+input[type=radio]:checked {
+  background-color: #9ba597;
+  border: 1px #9ba597 solid;
+}

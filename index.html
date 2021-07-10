@@ -1,155 +1,140 @@
 <!DOCTYPE html>
-<html lang="de">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link rel="stylesheet" href="style/stylesheet.css" type="text/css">
-        <title>Anmeldung Kunstausstellung</title>
-    </head>
-    <body>
-        <!-- NAVIGATION -->
-        <header>
-              <nav class="navbar">
-                  <div class="container">
-                      <a class="navbar-brand" href="index.html">
-                        <img src="images/logo-black.png" alt="logo"  height="80">
-                      </a>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Anmeldung</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://sfgz.ch" target="_blank">Zur Webseite</a>
-                            </li>
-                        </ul>
-                  </div>
-              </nav>
-        </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/input-form.css" />
+    <title>Anmeldung Kunstausstellung</title>
+  </head>
 
-        <main>
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-12 site-title">
-                      <h1>Anmeldung zur Kunstausstellung "Hidden Faces"</h1>
-                  </div> 
-              </div>
-              
-              <div class="row">
-                  <div class="col-md-12">
-                      <img src="images/dan-farrell-fT49QnFucQ8-unsplash.jpg" alt="featured-image-face"  width="100%">
-                  </div>
-              </div>
-          </div>
-
-            <!-- FORM -->
-            <div class="container">
-                <form class="row g-3">
-                    <!-- ANREDE -->
-                    <div class="col-md-4">
-                        <label for="inputAnrede" class="form-label">Anrede</label>
-                      <select id="inputAnrede" class="form-select shadow-none">
-                        <option selected>Wählen ...</option>
-                        <option value="1">Herr</option>
-                        <option value="2">Frau</option>
-                      </select>
-                      </div>
-
-                    <!-- VORNAME -->
-                    <div class="col-md-4">
-                      <label for="inputFirstname" class="form-label">Vorname</label>
-                      <input type="text" class="form-control shadow-none" id="inputFirstname">
-                    </div>
-
-                    <!-- NACHNAME -->
-                    <div class="col-md-4">
-                      <label for="inputLastname" class="form-label">Nachname</label>
-                      <input type="text" class="form-control shadow-none" id="inputLastname">
-                    </div>
-
-                    <div class="spacer"></div>
-                    
-                    <!-- EMAIL -->
-                    <div class="col-md-8">
-                        <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control shadow-none" id="inputEmail">
-                    </div>
-
-                    <!-- ANZAHL PERSONEN !!!!!!!! NOCH ZU BEARBEITEN !!!!!!!!! -->
-                    <div class="col-md-4">
-                      <label for="inputEmail" class="form-label">Anzahl Besucher (Bei Gruppen)</label>
-                      <input type="email" class="form-control shadow-none" id="inputEmail">
-                  </div>
-
-                    <!-- BESUCHEN AM -->
-                    <fieldset class="row mb-3">
-                        <legend class="col-form-label pt-0">Ich möchte die Ausstellung besuchen am:</legend>
-                        <div class="col-sm-10">
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input shadow-none" type="radio" name="gridRadios" id="comeSaturday" value="saturday" checked>
-                            <label class="form-check-label" for="comeSaturday">
-                              Sa. 7.8.21
-                            </label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input shadow-none" type="radio" name="gridRadios" id="comeSunday" value="sunday">
-                            <label class="form-check-label" for="comeSunday">
-                              So. 8.8.21
-                            </label>
-                          </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input shadow-none" type="radio" name="gridRadios" id="comeMonday" value="monday">
-                            <label class="form-check-label" for="comeMonday">
-                              Mo. 9.8.21
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input shadow-none" type="radio" name="gridRadios" id="comeTuesday" value="tuesday">
-                            <label class="form-check-label" for="comeTuesday">
-                              Di. 10.8.21
-                            </label>
-                        </div>
-                        </div>
-                      </fieldset>
-
-                    <!-- WORKSHOP TEILNAHME -->
-                    <div class="row">
-                        <p class="spacer"> Ich möchte den Workshop „Gesucht - Gefunden“ nach der Ausstellung um 14:00 Uhr besuchen</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 spacer btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn shadow-none" for="option1">Ja
-                              <input type="radio" class="btn-check exhibition" name="options" id="Yes" value="yes" autocomplete="off" checked>
-                            </label>
-
-                            <label class="btn shadow-none" for="option2">Nein
-                              <input type="radio" class="btn-check exhibition" name="options" id="No" value="no" autocomplete="off">
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- SENDEN -->
-                    <div class="row ">
-                      <div class="col-12 spacer-big d-flex justify-content-end">
-                        <button type="submit" class="btn shadow-none">Senden</button>
-                      </div>
-                    </div>
-                    
-                  </form>
-            </div>
-        </main>
-        
-        <footer>
-          <nav class="navbar">
-              <div class="container justify-content-end">
-                    <ul class="nav">
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+              <div class="container">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="images/logo-black.png" alt="logo"  height="80">
+                  </a>
+                    <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://sfgz.ch">Zur Webseite</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Anmeldung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://sfgz.ch" target="_blank">Zur Webseite</a>
                         </li>
                     </ul>
               </div>
-          </nav>
-        </footer>
+        </nav>
+    </header>
 
-    </body>
+    <main>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 site-title">
+                  <h2>Anmeldung zur virtuellen Kunstausstellung "Hidden Faces"</h2>
+              </div> 
+          </div>
+          
+          <div class="row">
+              <div class="col-md-12">
+                  <img src="images/dan-farrell-fT49QnFucQ8-unsplash.jpg" alt="featured-image-face"  width="100%">
+              </div>
+          </div>
+      </div>
 
+        <!-- FORM -->
+        <div class="container">
+          <form id="form" class="form">
+            <div class="form-control">
+              <label for="firstname">Vorname</label>
+              <input type="text" id="firstname" placeholder="Enter username" />
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label for="lastname">Nachname</label>
+              <input type="text" id="lastname" placeholder="Enter username" />
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Enter email" />
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label for="phone">Phone</label>
+              <input type="text" id="phone" placeholder="Enter email" />
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="Enter username" />
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Enter password" />
+              <small>Error message</small>
+            </div>
+
+            <fieldset class="row mb-3">
+              <legend class="col-form-label pt-0">Ich möchte die Ausstellung besuchen am:</legend>
+                  <div class="col-sm-10">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input shadow-none" type="radio" name="gridRadios" id="comeSaturday" value="saturday" checked>
+                          <label class="form-check-label" for="comeSaturday">
+                            Sa. 7.8.21
+                          </label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input shadow-none" type="radio" name="gridRadios" id="comeSunday" value="sunday">
+                          <label class="form-check-label" for="comeSunday">
+                            So. 8.8.21
+                          </label>
+                        </div>
+
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input shadow-none" type="radio" name="gridRadios" id="comeMonday" value="monday">
+                          <label class="form-check-label" for="comeMonday">
+                            Mo. 9.8.21
+                          </label>
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input shadow-none" type="radio" name="gridRadios" id="comeTuesday" value="tuesday">
+                          <label class="form-check-label" for="comeTuesday">
+                            Di. 10.8.21
+                          </label>
+                      </div>
+                  </div>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+
+          </form>
+        </div>
+    </main>
+
+    <footer>
+      <nav class="navbar">
+          <div class="container justify-content-end">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://sfgz.ch">Zur Webseite</a>
+                    </li>
+                </ul>
+          </div>
+      </nav>
+    </footer>
+
+    <script src="script/validate-inputs.js"></script>
+    
+  </body>
 </html>
